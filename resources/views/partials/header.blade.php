@@ -33,13 +33,16 @@
                         <!-- The user image in the navbar-->
                     {{--                        <img src="{{ Admin::user()->avatar }}" class="user-image" alt="User Image">--}}
                     <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                        <span class="hidden-xs"><strong>{{ Admin::user()->name }}</strong>
+
+
+                        <span class="hidden-xs"><strong><i class="fa fa-user"></i>{{ Admin::user()->name }}</strong>
                         </span>
                     </a>
 
                 </li>
                 <li>
-                    <a href="{{ admin_url('auth/logout') }}" >{{ trans('admin.logout') }}</a>
+
+                    <a href="{{ admin_url('auth/logout') }}" ><i class="fa fa-sign-out"></i>{{ trans('admin.logout') }}</a>
                 </li>
 
                 <!-- Control Sidebar Toggle Button -->
