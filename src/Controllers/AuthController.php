@@ -27,7 +27,7 @@ class AuthController extends Controller
     public function getLogin()
     {
         if ($this->guard()->check()) {
-            returnx redirect($this->redirectPath());
+            return redirect($this->redirectPath());
         }
 
         return view($this->loginView);
@@ -164,7 +164,7 @@ class AuthController extends Controller
     {
         return Lang::has('auth.failed')
             ? trans('auth.failed')
-            : '用户名或密码错误';
+            : 'These credentials do not match our records.';
     }
 
     /**
