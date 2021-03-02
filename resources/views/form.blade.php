@@ -3,7 +3,7 @@
         <h3 class="box-title">{{ $form->title() }}</h3>
 
         <div class="box-tools">
-            {!! $form->renderTools() !!}
+            {!! str_replace('列表','返回',$form->renderTools()) !!}
         </div>
     </div>
     <!-- /.box-header -->
