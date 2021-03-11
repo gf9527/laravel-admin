@@ -236,7 +236,7 @@ trait ModelTree
      *
      * @return array
      */
-    public static function selectOptions(\Closure $closure = null, $rootText = 'ROOT')
+    public static function selectOptions(\Closure $closure = null, $rootText = '请选择')
     {
         $options = (new static())->withQuery($closure)->buildSelectOptions();
 
