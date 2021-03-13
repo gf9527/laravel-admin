@@ -588,7 +588,14 @@ EOT;
          * {count} is increment number of current sub form count.
          */
         $script = <<<EOT
-var index = 0;
+        var index = 1;
+
+var tpl = $('template.{$this->column}-tpl');
+
+
+    var template = tpl.html().replace(/{$defaultKey}/g, index);
+    $('.has-many-{$this->column}-forms').append(template);
+    {$templateScript}
 $('#has-many-{$this->column}').on('click', '.add', function () {
 
     var tpl = $('template.{$this->column}-tpl');
