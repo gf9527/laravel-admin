@@ -130,6 +130,7 @@ class Select extends Field
         $strAllowClear = var_export($allowClear, true);
 
         $script = <<<EOT
+        $('{$this->getElementClassSelector()}').trigger('change');
 $(document).off('change', "{$this->getElementClassSelector()}");
 $(document).on('change', "{$this->getElementClassSelector()}", function () {
     var target = $(this).closest('.fields-group').find(".$class");
