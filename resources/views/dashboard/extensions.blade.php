@@ -10,7 +10,7 @@
 </style>
 <div class="box box-default">
     <div class="box-header with-border">
-        <h3 class="box-title">Available extensions</h3>
+        <h3 class="box-title">功能扩展包</h3>
 
         <div class="box-tools pull-right">
             <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -41,9 +41,4 @@
             <!-- /.item -->
         </ul>
     </div>
-    <!-- /.box-body -->
-    <div class="box-footer text-center">
-        <a href="https://github.com/laravel-admin-extensions" target="_blank" class="uppercase">View All Extensions</a>
-    </div>
-    <!-- /.box-footer -->
 </div>

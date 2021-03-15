@@ -2,6 +2,10 @@
 
 @section('content')
     <section class="content-header">
+        <h1>
+            {!! $header ?: trans('admin.title') !!}
+        </h1>
+
         <!-- breadcrumb start -->
         @if ($breadcrumb)
         <ol class="breadcrumb" style="margin-right: 30px;">
